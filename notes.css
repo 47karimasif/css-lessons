@@ -1,0 +1,29 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap"); */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-image: url("/spiderman.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+#title {
+  font-size: 40px;
+  opacity: 1;
+}
+
+#heading {
+  color: red;
+  /* font-family: "Roboto", sans-serif; */
+}
+.content {
+  font-size: 64px;
+}
+.content:hover {
+  cursor: pointer;
+}
