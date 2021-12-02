@@ -1,40 +1,87 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
-
-#heading {
-  color: black;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.ptag {
-  background: red;
-  margin-bottom: 100px;
-  padding: 40px;
-  text-align: center;
-}
-
-#p1 {
-  color: white;
-}
-#p2 {
-  color: grey;
-}
-
-#mydiv {
+/* for static */
+.static {
+  height: 200px;
+  width: 200px;
   background: grey;
-  padding: 20px 40px 60px 100px;
-  margin-top: 200px;
-}
-#mydiv p {
-  color: orange;
-}
-#mydiv p,
-h1 {
-  color: blue;
-  font-size: 56px;
-  font-weight: 400;
+  color: black;
 }
 
-/* block,
-inline
-inline-block */
+/* for relative */
+.relative {
+  height: 200px;
+  width: 200px;
+  background: rgb(112, 88, 88);
+  color: black;
+  position: relative;
+}
+
+/* absolute + relative */
+.container {
+  margin: 100px auto;
+  height: 400px;
+  width: 400px;
+  position: relative;
+  background: gray;
+}
+.img {
+  height: 400px;
+  width: 400px;
+}
+
+.white-card {
+  background: rgb(108, 214, 200);
+  color: black;
+  padding: 50px;
+  position: absolute;
+  top: 100px;
+  right: -200px;
+}
+
+/* for fixed */
+
+.nav {
+  background: blue;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  /* margin-bottom: 100px; */
+}
+
+.body {
+  width: 100%;
+  height: 3000px;
+  background: grey;
+}
+#spacer {
+  /* margin-top: 100px; */
+}
+/* for sticky */
+
+.parent {
+  display: flex;
+}
+
+.side1 {
+  width: 20%;
+  background: red;
+}
+
+.side2 {
+  width: 80%;
+  background: grey;
+  height: 3000px;
+}
+
+.stickyp {
+  padding: 40px;
+  background: white;
+  position: sticky;
+  /* bottom: 0px;
+  margin: 0px; */
+}
