@@ -8,10 +8,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="static">Static Box</div>
-    <div class="relative">Relative Box</div>
+    <!-- <div class="container">
+      <div class="div1"></div>
+      <div class="div2"></div>
+      <div class="div3"></div>
+      <div class="div4"></div>
+      <div class="div5"></div>
+    </div> -->
+    <!-- <div class="container2">
+      <div class="div11">Hi i am learning web dev</div>
+      <div class="div12">
+        <p id="p1">Front end</p>
+        <p id="p2">Back end</p>
+      </div>
+      </div>
+    </div> -->
+    <div class="wrapper">
+      <div class="parent">
+        <div class="img">
+          <img
+            src="data:image/png;base64,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"
+          />
+        </div>
+        <div class="content">
+          <h2>My name is jhn doe</h2>
+          <p>I am currently studying cse</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
-
-<!-- static : default (no effect of top bottom left right) -->
-<!-- relative : (can move using top bottom left right) -->

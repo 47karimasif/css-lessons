@@ -4,84 +4,92 @@ body {
   box-sizing: border-box;
 }
 
-/* for static */
-.static {
-  height: 200px;
-  width: 200px;
-  background: grey;
-  color: black;
-}
-
-/* for relative */
-.relative {
-  height: 200px;
-  width: 200px;
-  background: rgb(112, 88, 88);
-  color: black;
-  position: relative;
-}
-
-/* absolute + relative */
 .container {
-  margin: 100px auto;
-  height: 400px;
-  width: 400px;
-  position: relative;
-  background: gray;
-}
-.img {
-  height: 400px;
-  width: 400px;
-}
-
-.white-card {
-  background: rgb(108, 214, 200);
-  color: black;
-  padding: 50px;
-  position: absolute;
-  top: 100px;
-  right: -200px;
-}
-
-/* for fixed */
-
-.nav {
-  background: blue;
+  height: 1000px;
   width: 100%;
-  height: 100px;
-  position: fixed;
-  /* margin-bottom: 100px; */
-}
-
-.body {
-  width: 100%;
-  height: 3000px;
   background: grey;
+  display: flex;
+  flex-direction: row;
 }
-#spacer {
-  /* margin-top: 100px; */
-}
-/* for sticky */
 
-.parent {
+.div1 {
+  height: 200px;
+  width: 25%;
+  background: blue;
+}
+.div2 {
+  height: 200px;
+  width: 25%;
+  background: green;
+}
+.div3 {
+  height: 200px;
+  width: 25%;
+  background: orange;
+}
+.div4 {
+  height: 200px;
+  width: 25%;
+  background: black;
+}
+
+.div5 {
+  height: 200px;
+  width: 25%;
+  background: pink;
+}
+
+.container2 {
+  height: 300px;
+  width: 100%;
+  background: grey;
   display: flex;
 }
 
-.side1 {
-  width: 20%;
-  background: red;
+.div11 {
+  flex: 1;
+  background: blue;
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.div12 {
+  flex: 1;
+  display: flex;
+  height: fit-content;
+  flex-direction: row;
+}
+#p1 {
+  padding: 30px;
+  background: gold;
+  margin-bottom: 20px;
 }
 
-.side2 {
-  width: 80%;
+#p2 {
+  padding: 30px;
+  background: beige;
+  margin-bottom: 20px;
+}
+/* .wrapper {
+  display: flex;
+  justify-content: center;
+} */
+.parent {
   background: grey;
-  height: 3000px;
+  border: 1px solid black;
+  max-width: 1000px;
+  margin: 100px auto;
+  display: flex;
 }
 
-.stickyp {
-  padding: 40px;
-  background: white;
-  position: sticky;
-  /* bottom: 0px;
-  margin: 0px; */
+.img {
+  flex: 1;
+}
+.content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
